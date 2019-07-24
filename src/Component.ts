@@ -3,8 +3,8 @@ import { LitElement, customElement, property } from "lit-element";
 import Style from "./Style";
 import Template from "./Template";
 
-@customElement("component-clap")
-export class Clap extends LitElement {
+@customElement("clap-component")
+export class ClapComponent extends LitElement {
   public static styles = Style;
 
   public render = Template.bind(this);
