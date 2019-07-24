@@ -6,10 +6,10 @@ import Template from "./Template";
 @customElement("clap-component")
 export class ClapComponent extends LitElement {
   public static styles = Style;
-
   public render = Template.bind(this);
-  public interval: any;
+
   @property({ type: Number }) public count = 0;
+  public interval: any;
 
   firstUpdated() {
     const button = this.shadowRoot.querySelector("#clap");
